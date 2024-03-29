@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github ChatBot</title>
     <link rel="stylesheet" href="style/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/@jehankandy/jkcss@5.1.0/src/jkcss.min.css" rel="stylesheet">
 </head>
 <body>
-    
+    <h1>GitHub Repository Search</h1>
+    <form id="searchForm">
+      <label for="searchQuery">Search repositories:</label>
+      <input type="text" id="searchQuery" name="searchQuery" required>
+      <button type="submit">Search</button>
+    </form>
+    <div id="results"></div>
 
     <script src="script/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jehankandy/jkcss@5.1.0/js/jkcss.min.js"></script>
 </body>
 </html>
