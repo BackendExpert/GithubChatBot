@@ -9,12 +9,17 @@ form.addEventListener('submit', function(e){
     if(searchData === ""){
         alert("Enter Value")
     }
-
-
-    
     alert(searchData)
 
-    document.getElementById("results").innerHTML = `
+    // fetch data from api
+    fetch("https://api.github.com/search/repositories?q=" + searchData)
+    .then((result) => result.json())
+    .then((data) => {
+        document.getElementById("results").innerHTML = `
         
-    `
+        `
+    })
+    
+
+
 })
