@@ -29,5 +29,8 @@ body{
   }
 
   .api_data{
-    background-color: green;
+    background-color: rgb(235, 235, 235);
+    padding: 50px 100px;
+    border-radius: 5px;
+    margin: 20px 0;
   }

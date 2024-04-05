@@ -24,7 +24,7 @@ form.addEventListener('submit', async function(e){
             // ApiData += "<p>" + data.items[i].owner.login + "</p>"
             ApiData += `
                 <div class='api_data'>
-                    Hi all
+                    <img src="`+ data.items[i].owner.avatar_url +`" />
                 </div>
             `
         }
