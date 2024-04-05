@@ -16,7 +16,11 @@ form.addEventListener('submit', function(e){
     .then((result) => result.json())
     .then((data) => {
         var DataSearch = document.getElementById("results");
-        let title = "<h2>Result: </h2>"
+        let ApiData = "<h2>Result: </h2>"
+
+        for(let i = 0; i < items.length; i++){
+            ApiData += '<div>' + items[i].full_name + '</div>';
+        }
 
         DataSearch.innerHTML = title;
     })
