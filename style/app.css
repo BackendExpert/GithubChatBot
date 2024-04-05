@@ -22,6 +22,12 @@ body{
     border: 1px solid green;
     background: none;
     color: green;
+    transition: 0.5s;
+  }
+  .submit-btn:hover{
+    background-color: green;
+    cursor: pointer;
+    color: white;
   }
 
   footer{
