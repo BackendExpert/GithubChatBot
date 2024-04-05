@@ -6,4 +6,9 @@
 
 ### v1.0.0 - 05 April 2024
 
-- 
+- initial release of the Project
+
+
+## Developers
+
+- JehanKandy
