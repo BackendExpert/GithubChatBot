@@ -9,4 +9,6 @@ form.addEventListener('submit', function(e){
     if(searchData === ""){
         alert("Enter Value")
     }
+
+    alert(searchData)
 })
