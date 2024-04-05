@@ -12,17 +12,15 @@ form.addEventListener('submit', function(e){
     alert(searchData)
 
     // fetch data from api
-    fetch("https://api.github.com/search/repositories?q=" + searchData)
+    fetch("https://api.github.com/search/repositories?q="+searchData)
     .then((result) => result.json())
     .then((data) => {
         var DataSearch = document.getElementById("results");
         let ApiData = "<h2>Result: </h2>"
 
-        for(let i = 0; i < items.length; i++){
-            ApiData += '<div>' + items[i].full_name + '</div>';
-        }
+        ApiData += "<p>"+data.items+"</p>"
 
-        DataSearch.innerHTML = title;
+        DataSearch.innerHTML = ApiData;
     })
     
 
