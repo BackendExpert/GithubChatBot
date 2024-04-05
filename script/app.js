@@ -21,11 +21,9 @@ form.addEventListener('submit', async function(e){
         // ApiData += data.items[0].name
 
         for(var i = 0; i < 10 && i < data.items.length; i++){
-            ApiData += "<p>" + data.items[i].owner.url + "</p>"
-            
-            // var owner = 
+            ApiData += "<p>" + data.items[i].owner.login + "</p>"
         }
-
+        ApiData += data.total_count;
         DataSearch.innerHTML = ApiData;
     })
     
