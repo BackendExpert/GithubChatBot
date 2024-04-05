@@ -1,10 +1,3 @@
-document.getElementById('searchForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const searchQuery = document.getElementById('searchQuery').value;
-    // searchRepositories(searchQuery);    
-    alert(searchQuery)
-});
-
 async function GithubRepo(searchQuery){
     const repo_api = `https://api.github.com/search/repositories?q=${encodeURIComponent(query)}`
 
@@ -22,5 +15,23 @@ async function GithubRepo(searchQuery){
         return null
     }
 }
+
+document.getElementById('searchForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const searchQuery = document.getElementById('searchQuery').value;
+    alert(searchQuery)
+});
+
+GithubRepo(searchQuery)
+    .then(repos => {
+        if(repos){
+            repos.forEach(repo => {
+                console.log(repo.name, repo.html_url)
+            })
+        }
+        else{
+            console.log("ERROR")
+        }
+    })
 
 // https://api.github.com/search/repositories?q=
