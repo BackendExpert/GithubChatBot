@@ -23,3 +23,7 @@ body{
     background: none;
     color: green;
   }
+
+  footer{
+    margin: 120px 0 0 0;
+  }
