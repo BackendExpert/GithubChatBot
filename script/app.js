@@ -18,7 +18,12 @@ form.addEventListener('submit', function(e){
         var DataSearch = document.getElementById("results");
         let ApiData = "<h2>Result: </h2>"
 
-        ApiData += "<p>"+data.items+"</p>"
+        // for(let i = 0; i < data.length; i++){
+        //     //countfollowing += '<div>' + data_following[i].login + '</div>';
+        //     ApiData += "<p>"+data[i].full_name+"</p>"
+        // }
+        ApiData += "<p>"+ data.items +"</p>"
+        
 
         DataSearch.innerHTML = ApiData;
     })
