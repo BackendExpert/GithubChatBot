@@ -10,5 +10,11 @@ form.addEventListener('submit', function(e){
         alert("Enter Value")
     }
 
+
+    
     alert(searchData)
+
+    document.getElementById("results").innerHTML = `
+        
+    `
 })
