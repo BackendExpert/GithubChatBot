@@ -14,6 +14,7 @@ async function GithubRepo(searchQuery){
         //    const data = await res.json()
         //    return data.items; 
            return await res.json(data.items);
+           alert(data.items)
         }
     }
     catch (err){
